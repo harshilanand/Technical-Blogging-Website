@@ -1,34 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Honk:MORF@0..45&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Macondo&family=Noto+Color+Emoji&family=Sacramento&display=swap');
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* styles.css */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+header {
+    background-color: #e4dbe7;
+    color: #a507d5;
+    font-family: fantasy;
+    font-size: 25px;
+    display: flex;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 body {
+    background-color: #f2edf3;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.logo img{
+    width: 55px;
+    height: 55px;
+    margin: 10px 10px;
+    transition: 0.5s;
 }
 
 header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px;
+    font-family: dancing script;
 }
 
 main {
@@ -40,15 +43,63 @@ article {
 }
 
 article h2 {
-    color: #333;
+    color: #7a5181;
 }
 
 footer {
-    background-color: #333;
+    background-color: #c5c2c2;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Navigation bar styles */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+nav {
+    background-color: #7c4494;
+    padding: 1px;
+    display: inlin;
+    width: 100%;
+}
+ul{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    /* margin: 10px 10px; */
+    padding: 0px 10px;}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: end;
+    padding-left: 9px;
+}
+
+.nav-login{
+    margin-left: auto;
+    margin-right: 10px;
 }
