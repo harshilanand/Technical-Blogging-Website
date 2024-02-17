@@ -8,8 +8,12 @@ header {
     background-color: #e4dbe7;
     color: #a507d5;
     font-family: fantasy;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
+}
+
+.title {
+    width: 310px;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -19,11 +23,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /* background-image: url('assets/w2.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.logo img{
-    width: 55px;
-    height: 55px;
+.logo img {
+    width: 60px;
+    height: 60px;
     margin: 10px 10px;
     transition: 0.5s;
 }
@@ -42,8 +49,14 @@ article {
     margin-bottom: 40px;
 }
 
+.srm {
+    display: flex;
+    justify-content: center;
+}
+
 article h2 {
     color: #7a5181;
+    text-align: center;
 }
 
 footer {
@@ -67,7 +80,8 @@ nav {
     display: inlin;
     width: 100%;
 }
-ul{
+
+ul {
     /* display: flex; */
     align-items: center;
     justify-content: center;
@@ -76,7 +90,8 @@ ul{
 nav ul li {
     display: inline;
     /* margin: 10px 10px; */
-    padding: 0px 10px;}
+    padding: 0px 10px;
+}
 
 nav ul li a {
     color: #fff;
@@ -87,19 +102,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
     padding: 0px;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
     align-items: end;
     padding-left: 9px;
 }
 
-.nav-login{
+.nav-login {
     margin-left: auto;
     margin-right: 10px;
 }
