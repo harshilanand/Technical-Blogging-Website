@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Honk:MORF@0..45&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Macondo&family=Noto+Color+Emoji&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Honk:MORF@0..45&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Color+Emoji&family=Sacramento&family=Sofia&display=swap');
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* styles.css */
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 header {
+    tab-size: 0px 0px -10px 0px;
     color: #faf9fa;
     background-color: #3f0259;
     font-family: fantasy;
@@ -19,7 +20,6 @@ header {
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 body {
-    background-image: url('assets/w5.jpg');
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0px 0px 0px 0px;
@@ -55,37 +55,41 @@ article {
     background-size: cover;
     justify-content: center;
     text-align: center;
+    background-image: url('assets/w5.jpg');
+    /* background-size: cover; */
     /* background-color: #f2edf3; */
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
+.hero-heading p{
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 30px;
+    text-shadow: none;
 }
 
 .hero-heading {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     color: #f6ecf8;
-    font-size: 60px;
-    text-shadow: #7f2ca2 2px 6px 2px;
+    font-size: 65px;
+    text-shadow: #2f0f3d 4px 8px 4px;
     /* text-decoration: double; */
     padding: 151px 0px 151px 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
 }
 
-.hero-content p {
-    color: #f6ecf8;
-    font-size: 20px;
-    padding: 0px 0px 0px 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
-}
+.gradient-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, #060008); /* Adjust colors as needed */
+  }
 
 footer {
     background-color: #c5c2c2;
@@ -165,33 +169,47 @@ nav ul li a:hover {
     }
 }
 
+.recent-post{
+
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: sofia, sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    background-color: #f1e9fe;
+    background-image: url('assets/w3.jpg');
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 30px 0px 30px 70px;
     margin: 0px 0px 0px 0px;
-    padding: 50px 0px 50px 60px;
     gap: 50px;
     background-image: url('assets/w3.jpg');
     background-size: auto;
-    background-blend-mode: lighten;
+    background-blend-mode: overlay;
 }
 
 .cards h1 {
     color: #000000;
-    font-size: 50px;
-    padding: 0px 0px 0px 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    justify-content: center;
+    padding: 20px 0px 0px 25px;
+    box-sizing: content-box;
 }
 
 .container {
+    height: 85%;
     width: 85%;
     height: auto;
     min-height: 500px;
     max-width: 450px;
     min-width: 250px;
-    background: #f8effb;
+    background: #ffffff;
     text-align: left;
     background-size: 25px 25px;
     box-shadow: #03070948 10px 10px;
