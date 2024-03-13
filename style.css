@@ -7,7 +7,7 @@
 header {
     tab-size: 0px 0px -10px 0px;
     color: #faf9fa;
-    background-color: #3f0259;
+    background-color: #12022c;
     font-family: fantasy;
     font-size: 20px;
     display: flex;
@@ -15,6 +15,7 @@ header {
 
 .title {
     width: 310px;
+    padding: 10px 30px 10px 30px;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -112,9 +113,9 @@ footer p {
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 nav {
-    background-color: #782d98;
-    padding: 1px;
-    display: inlin;
+    background-color: #170535;
+    padding: 10px 0px 0px 0px;
+    display: inline;
     width: 100%;
 }
 
@@ -145,15 +146,12 @@ nav ul li a:hover {
     padding: 0px;
 }
 
-.nav-items {
-    display: flex;
-    align-items: end;
-    padding-left: 9px;
-}
-
-.nav-login {
+.nav-items{
     margin-left: auto;
     margin-right: 10px;
+    display: flex;
+    align-items: end;
+    padding-left: 0px;
 }
 
 

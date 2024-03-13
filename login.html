@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style2.css">
-</head>
-<body>
-    
-</body>
+<html lang="en">
+  <head>
+    <title>To-Do List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Images\todologo1.png" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="heading">
+        <h1 class="heading__title">Login</h1>
+      </div>
+      <form class="form">
+        <div>
+          <input class="form__input"
+               id="todo"
+               name="to-do"
+               size="30"
+               required
+               >
+          <button class="button"><span>Submit</span></button>
+        </div>
+      </form>
+      <div>
+        <ul class = "toDoList"></ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
