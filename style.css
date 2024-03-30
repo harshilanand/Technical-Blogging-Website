@@ -278,3 +278,54 @@ nav ul li a:hover {
     transition: all 0.3s ease 0s;
     text-decoration: none;
 }
+
+
+body {
+    background-color: #61029ce2;
+}
+
+.main {
+    background-image: url("assets/img/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: rgb(40, 3, 69);
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.bla{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+.blabla{
+    font-size: 24px;
+
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
